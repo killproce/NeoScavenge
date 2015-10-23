@@ -1,0 +1,12 @@
+<? xml version="1.0" ?>
+<SelectSkill>
+	<TalentSkill>
+		<Skill id="1" point="3" imgpath="ItmSkillAth.png"/>
+		<Skill id="2" point="4" imgpath="ItmSkillBotany.png"/>
+	</TalentSkill>
+	
+	<FlawSkill>
+		<Skill id="3" point="2" imgpath="ItmFlawEnervated.png"/>
+		<Skill id="4" point="4" imgpath="ItmFlawFbl.png"/>
+	</FlawSkill>
+</SelectSkill>

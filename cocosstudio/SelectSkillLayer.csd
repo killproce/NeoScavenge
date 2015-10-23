@@ -102,8 +102,8 @@
             <FileData Type="Normal" Path="SelectSkill/GUIArrowRight.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="UsedSkillPointText" ActionTag="-1617623979" Tag="60" IconVisible="False" LeftMargin="714.8112" RightMargin="589.1888" TopMargin="126.6260" BottomMargin="625.3740" FontSize="16" LabelText="使用：0" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="56.0000" Y="16.0000" />
+          <AbstractNodeData Name="UsedSkillPointLabel" ActionTag="-1617623979" Tag="60" IconVisible="False" LeftMargin="714.8112" RightMargin="589.1888" TopMargin="126.6260" BottomMargin="625.3740" FontSize="16" LabelText="使用：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="48.0000" Y="16.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="742.8112" Y="633.3740" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -113,8 +113,8 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="LeftSkillPointText" ActionTag="602628123" Tag="61" IconVisible="False" LeftMargin="711.7075" RightMargin="584.2925" TopMargin="152.3875" BottomMargin="599.6125" FontSize="16" LabelText="剩余：15" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="64.0000" Y="16.0000" />
+          <AbstractNodeData Name="LeftSkillPointLabel" ActionTag="602628123" Tag="61" IconVisible="False" LeftMargin="711.7075" RightMargin="584.2925" TopMargin="152.3875" BottomMargin="599.6125" FontSize="16" LabelText="剩余：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="48.0000" Y="16.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="743.7075" Y="607.6125" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -196,6 +196,28 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.6420" Y="0.5840" />
             <PreSize X="0.0000" Y="0.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="UsedSkillPointText" ActionTag="-2281120" Tag="30" IconVisible="False" LeftMargin="767.1656" RightMargin="584.8344" TopMargin="127.4909" BottomMargin="624.5091" FontSize="16" LabelText="0" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="8.0000" Y="16.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="771.1656" Y="632.5091" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="2" G="196" B="2" />
+            <PrePosition X="0.5670" Y="0.8236" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="LeftSkillPointText" ActionTag="839423086" Tag="31" IconVisible="False" LeftMargin="762.7189" RightMargin="581.2811" TopMargin="153.3628" BottomMargin="598.6372" FontSize="16" LabelText="15" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="16.0000" Y="16.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="770.7189" Y="606.6372" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="2" G="196" B="2" />
+            <PrePosition X="0.5667" Y="0.7899" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

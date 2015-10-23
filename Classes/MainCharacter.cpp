@@ -1,5 +1,17 @@
 #include "MainCharacter.h"
 
+MainCharacter* MainCharacter::create()
+{
+	auto pRet = new MainCharacter;
+	if (pRet && pRet->init())
+	{
+		pRet->autorelease();
+		return pRet;
+	}
+	CC_SAFE_DELETE(pRet);
+	return pRet;
+}
+
 bool MainCharacter::init()
 {
 	if (!ObjectBase::init())

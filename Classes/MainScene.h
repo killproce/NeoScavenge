@@ -6,7 +6,9 @@
 #include "public.h"
 USING_NS_CC;
 
-class Bag;
+
+
+class SelectSkillLayer;
 
 class MainScene : public cocos2d::Layer
 {
@@ -17,15 +19,12 @@ public:
 
     CREATE_FUNC(MainScene);
 
-
+	virtual void update(float delta);
 private:
 	void loadUi();
-	Bag* createBag(stBagSize s);
-	void initTalentBag();
-	void initFlawBag();
-
 private:
 	Node* m_skillPanel;
+	SelectSkillLayer* m_selectSkillLayer;
 };
 
 #endif // __MAIN_SCENE_H__

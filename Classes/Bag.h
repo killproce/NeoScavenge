@@ -60,10 +60,15 @@ public:
 	Size getRealSize(){
 		return m_realSize;
 	}
+
+
 public:
 	
 	typedef std::vector<ObjectBase*> ItemContainer;
 	typedef ItemContainer::iterator ItemConIter;
+
+public:
+	const ItemContainer& getItemContainers() const { return m_itemContainers; }
 protected:
 	Sprite* m_bgImg;
 	stBagSize m_bagSize; //¸ñ×ÓÊý

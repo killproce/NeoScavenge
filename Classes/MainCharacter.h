@@ -8,6 +8,7 @@ class MainCharacter : public ObjectBase
 {
 public:
 	virtual bool init();
+	static MainCharacter* create();
 
 };
 

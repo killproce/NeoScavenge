@@ -1,14 +1,14 @@
 #include "MainScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
-#include "Bag.h"
-#include "Prop.h"
+#include "SelectSkillLayer.h"
 USING_NS_CC;
-
 using namespace cocostudio::timeline;
+using namespace tinyxml2;
 
 MainScene::MainScene()
 	:m_skillPanel(NULL)
+	,m_selectSkillLayer(NULL)
 {
 
 }
@@ -30,10 +30,7 @@ bool MainScene::init()
    
 	loadUi();
 	
-	initTalentBag();
-
-	initFlawBag();
-
+	scheduleUpdate();
     return true;
 }
 
@@ -45,70 +42,12 @@ void MainScene::loadUi()
 
 	auto bgPanel = dynamic_cast<ui::Layout*>(rootNode->getChildByName("BgPanel"));
 	m_skillPanel = dynamic_cast<Node*>(bgPanel->getChildByName("SelectSkillPanel"));
+
+	m_selectSkillLayer = SelectSkillLayer::create(m_skillPanel);
+	addChild(m_selectSkillLayer);
 }
 
-Bag* MainScene::createBag(stBagSize s)
+void MainScene::update(float delta)
 {
-	auto pRetBag = Bag::create(stBagSize(12, 24));
-	float h = pRetBag->getRealSize().height;
-	pRetBag->setPosition(Vec2(0, - h));
-	return pRetBag;
-}
 
-void MainScene::initTalentBag()
-{
-	auto bagSelTalentNode = dynamic_cast<Node*>(m_skillPanel->getChildByName("SelectTalent_BagPos"));
-	auto bagUseTalentNode = dynamic_cast<Node*>(m_skillPanel->getChildByName("UsedTalent_BagPos"));
-	
-	auto selectTalentBag = createBag(stBagSize(12, 24));
-	bagSelTalentNode->addChild(selectTalentBag);
-	bagSelTalentNode->setScale(BAG_SCALE);
-
-	auto useTalentBag = createBag(stBagSize(12, 24));
-	bagUseTalentNode->addChild(useTalentBag);
-	bagUseTalentNode->setScale(BAG_SCALE);
-
-	// 设置关联包裹
-	selectTalentBag->setRelatedBag(useTalentBag);
-	useTalentBag->setRelatedBag(selectTalentBag);
-
-	// 
-	// 添加技能flag
-	//
-	auto prop = Prop::create("ItmSkillAth.png");
-	prop->SetObjectSize(Size(6, 2));
-	selectTalentBag->addItem(prop);
-
-	auto prop1 = Prop::create("ItmSkillBotany.png");
-	prop1->SetObjectSize(Size(6, 2));
-	selectTalentBag->addItem(prop1);
-}
-
-void MainScene::initFlawBag()
-{
-	auto bagSelFlawNode = dynamic_cast<Node*>(m_skillPanel->getChildByName("SelectFlaw_BagPos"));
-	auto bagUseFlawNode = dynamic_cast<Node*>(m_skillPanel->getChildByName("UsedFlaw_BagPos"));
-
-	auto selectFlawBag = createBag(stBagSize(12, 24));
-	bagSelFlawNode->addChild(selectFlawBag);
-	bagSelFlawNode->setScale(BAG_SCALE);
-
-	auto useFlawBag = createBag(stBagSize(12, 24));
-	bagUseFlawNode->addChild(useFlawBag);
-	bagUseFlawNode->setScale(BAG_SCALE);
-
-	// 设置关联包裹
-	selectFlawBag->setRelatedBag(useFlawBag);
-	useFlawBag->setRelatedBag(selectFlawBag);
-
-	// 
-	// 添加技能flag
-	//
-	auto prop = Prop::create("ItmFlawEnervated.png");
-	prop->SetObjectSize(Size(6, 2));
-	selectFlawBag->addItem(prop);
-
-	auto prop1 = Prop::create("ItmFlawFbl.png");
-	prop1->SetObjectSize(Size(6, 2));
-	selectFlawBag->addItem(prop1);
 }

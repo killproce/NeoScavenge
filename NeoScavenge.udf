@@ -28,15 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="MenuScene/MenuScene.csd" />
-          <FilePathData Path="SelectScene/SelectScene.csd" />
-          <FilePathData Path="SelectSkillLayer.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="SelectSkillLayer.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

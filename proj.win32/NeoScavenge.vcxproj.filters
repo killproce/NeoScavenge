@@ -10,6 +10,27 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\物体">
+      <UniqueIdentifier>{706f5557-214c-4121-8e60-276ddab12852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\道具">
+      <UniqueIdentifier>{3cb222a2-a2e8-432e-a00e-af94a5f08d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\工具">
+      <UniqueIdentifier>{00932cc1-9de9-4a23-b45f-038be7395e4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\场景">
+      <UniqueIdentifier>{84815267-9a06-48df-9e19-e77e74c29e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\地图">
+      <UniqueIdentifier>{61025f6b-80b4-427d-a05d-455911ebe22d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\parser">
+      <UniqueIdentifier>{26abf0ff-7d89-4c23-9651-ce8d87d0ae35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\层">
+      <UniqueIdentifier>{05ad5e2b-e022-4345-b0b2-08dc90a5d04c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -18,8 +39,41 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Creature.cpp">
+      <Filter>src\物体</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectBase.cpp">
+      <Filter>src\物体</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Prop.cpp">
+      <Filter>src\道具</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>src</Filter>
+      <Filter>src\场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuScene .cpp">
+      <Filter>src\场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainCharacter.cpp">
+      <Filter>src\物体</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainScene.cpp">
+      <Filter>src\场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bag.cpp">
+      <Filter>src\工具</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FlawHint.cpp">
+      <Filter>src\工具</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Skill.cpp">
+      <Filter>src\道具</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\XmlParser.cpp">
+      <Filter>src\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SelectSkillLayer.cpp">
+      <Filter>src\层</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -29,8 +83,44 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
+    <ClInclude Include="..\Classes\public.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Creature.h">
+      <Filter>src\物体</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectBase.h">
+      <Filter>src\物体</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainCharacter.h">
+      <Filter>src\物体</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Prop.h">
+      <Filter>src\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src\场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainScene.h">
+      <Filter>src\场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuScene.h">
+      <Filter>src\场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bag.h">
+      <Filter>src\工具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FlawHint.h">
+      <Filter>src\工具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Skill.h">
+      <Filter>src\道具</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\XmlParser.h">
+      <Filter>src\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SelectSkillLayer.h">
+      <Filter>src\层</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
