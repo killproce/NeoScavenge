@@ -1,0 +1,52 @@
+<Solution>
+  <PropertyGroup Name="NeoScavenge" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="MenuScene">
+          <Image Name="nsLogo.png" />
+          <Image Name="titleScrollBg.png" />
+          <Image Name="titleScrollGrass.png" />
+          <Image Name="titleScrollIslands.png" />
+          <Image Name="titleScrollMid.png" />
+          <Image Name="titleScrollMtns.png" />
+          <Image Name="titleScrollTrees.png" />
+          <Image Name="x2_btn_esc_exit.png" />
+          <Image Name="x2_btn_esc_exit_dn.png" />
+          <Image Name="x2_btn_esc_quit.png" />
+          <Image Name="x2_btn_esc_quit_dn.png" />
+          <Image Name="x2_btn_esc_resume.png" />
+          <Image Name="x2_btn_esc_resume_dn.png" />
+          <Image Name="x2_btn_esc_save.png" />
+          <Image Name="x2_btn_esc_save_dn.png" />
+          <Image Name="x2_btn_load_dn.png" />
+          <Image Name="x2_btn_load_off.png" />
+          <Image Name="x2_btn_play_dn.png" />
+          <Image Name="x2_btn_play_off.png" />
+        </Folder>
+        <Folder Name="SelectScene">
+          <Image Name="btn_main_help.png" />
+          <Image Name="btn_main_help_dn.png" />
+          <Image Name="GUIMessageFrameBig_1360x768.png" />
+          <Image Name="AModeFrame_1360x768.png" />
+          <Image Name="GUINBar.png" />
+          <Image Name="GUINBarArrowGreen.png" />
+          <Image Name="GUINBarArrowRed.png" />
+        </Folder>
+        <Folder Name="SelectLayer" />
+        <Project Name="MenuScene/MenuScene.csd" Type="Scene" />
+        <Project Name="SelectScene/SelectScene.csd" Type="Scene" />
+        <Folder Name="SelectSkill">
+          <Image Name="btn_confirm.png" />
+          <Image Name="btn_confirm_dn.png" />
+          <Image Name="GUIArrowRight.png" />
+          <Image Name="GUIBG.png" />
+          <Image Name="GUIGrid.png" />
+          <Image Name="x2_btn_random_dn.png" />
+          <Image Name="x2_btn_random_off.png" />
+        </Folder>
+        <Project Name="SelectSkillLayer.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

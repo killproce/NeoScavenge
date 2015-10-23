@@ -1,0 +1,5 @@
+proj.ios_mac/
+Debug.win32/
+*.opensdf
+*.sdf
+*.ipch
