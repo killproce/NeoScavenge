@@ -1,5 +1,11 @@
 #include "MainCharacter.h"
 
+MainCharacter::MainCharacter()
+:m_characterImg(NULL)
+{
+
+}
+
 MainCharacter* MainCharacter::create()
 {
 	auto pRet = new MainCharacter;
@@ -19,5 +25,6 @@ bool MainCharacter::init()
 		return false;
 	}
 
+	setPosInMap(stMapPos(3, 2));
 	return true;
 }

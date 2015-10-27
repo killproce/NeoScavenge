@@ -1,0 +1,11 @@
+<? xml version="1.0" ?>
+<TileConfig>
+	<TileData id="1" imgpath="HexSheetSummerDay.png" row="1" col="1" />
+	<TileData id="2" imgpath="HexSheetSummerDay.png" row="1" col="2" />
+	<TileData id="3" imgpath="HexSheetSummerDay.png" row="1" col="3" />
+	<TileData id="4" imgpath="HexSheetSummerDay.png" row="1" col="4" />
+	<TileData id="5" imgpath="HexSheetSummerDay.png" row="2" col="1" />
+	<TileData id="6" imgpath="HexSheetSummerDay.png" row="2" col="2" />
+	<TileData id="7" imgpath="HexSheetSummerDay.png" row="2" col="3" />
+	<TileData id="8" imgpath="HexSheetSummerDay.png" row="2" col="4" />
+</TileConfig>

@@ -1,0 +1,21 @@
+<? xml version="1.0" ?>
+<Map>
+	<MapHeader rows="5" cols="3" />
+	<MapData>
+		<Tile row="1" col="1" id="1"/>
+		<Tile row="1" col="2" id="1"/>
+		<Tile row="1" col="3" id="1"/>
+		<Tile row="2" col="1" id="3"/>
+		<Tile row="2" col="2" id="2"/>
+		<Tile row="2" col="3" id="4"/>
+		<Tile row="3" col="1" id="4"/>
+		<Tile row="3" col="2" id="7"/>
+		<Tile row="3" col="3" id="6"/>
+		<Tile row="4" col="1" id="4"/>
+		<Tile row="4" col="2" id="5"/>
+		<Tile row="4" col="3" id="2"/>
+		<Tile row="5" col="1" id="8"/>
+		<Tile row="5" col="2" id="8"/>
+		<Tile row="5" col="3" id="3"/>
+	</MapData>
+</Map>

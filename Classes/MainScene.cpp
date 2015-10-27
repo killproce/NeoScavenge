@@ -2,6 +2,8 @@
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "SelectSkillLayer.h"
+#include "MainCharacter.h"
+
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace tinyxml2;
@@ -28,6 +30,8 @@ bool MainScene::init()
         return false;
     }
    
+	m_mainCharacter = MainCharacter::create();
+
 	loadUi();
 	
 	scheduleUpdate();

@@ -9,6 +9,7 @@ USING_NS_CC;
 
 
 class SelectSkillLayer;
+class MainCharacter;
 
 class MainScene : public cocos2d::Layer
 {
@@ -25,6 +26,7 @@ private:
 private:
 	Node* m_skillPanel;
 	SelectSkillLayer* m_selectSkillLayer;
+	MainCharacter* m_mainCharacter;
 };
 
 #endif // __MAIN_SCENE_H__
