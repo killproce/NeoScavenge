@@ -8,6 +8,7 @@ class ObjectBase : public Node
 {
 public:
 	virtual bool init();
+	CREATE_FUNC(ObjectBase);
 
 	void SetObjectID(unsigned int uid){ m_uid = m_uid; }
 	unsigned int GetObjectID() { return m_uid; }

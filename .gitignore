@@ -4,3 +4,4 @@ bin/
 *.opensdf
 *.sdf
 *.ipch
+UpgradeLog*.htm

@@ -2,6 +2,7 @@
 #include "Bag.h"
 #include "tinyxml2/tinyxml2.h"
 #include "Skill.h"
+#include "MapLayer.h"
 
 SelectSkillLayer::SelectSkillLayer()
 :m_skillPanel(NULL)
@@ -230,7 +231,11 @@ void SelectSkillLayer::loadSelectSkillConfig()
 
 void SelectSkillLayer::onConfirmCallback()
 {
-
+	auto scene = Director::getInstance()->getRunningScene();
+	auto mapLayer = MapLayer::create();
+	scene->addChild(mapLayer,-1);
+	m_skillPanel->setVisible(false);
+	this->setVisible(false);
 }
 
 void SelectSkillLayer::onRandomSelectCallback()
