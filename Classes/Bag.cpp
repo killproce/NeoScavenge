@@ -1,5 +1,6 @@
 #include "Bag.h"
 #include "ObjectBase.h"
+#include "GameManager.h"
 
 Bag::Bag()
 	:m_bgImg(NULL),
@@ -44,6 +45,7 @@ bool Bag::initWithSize(stBagSize s)
 
 	// ´¥ÃşÉèÖÃ
 	auto listener = EventListenerTouchOneByOne::create();
+	listener->setSwallowTouches(false);
 	listener->onTouchBegan = CC_CALLBACK_2(Bag::onTouchBegan, this);
 	listener->onTouchMoved = CC_CALLBACK_2(Bag::onTouchMoved, this);
 	listener->onTouchEnded = CC_CALLBACK_2(Bag::onTouchEnded, this);
@@ -54,7 +56,8 @@ bool Bag::initWithSize(stBagSize s)
 
 bool Bag::onTouchBegan(Touch *touch, Event *unused_event)
 {
-
+	if (eSelectSkill != GameManager::getInstance()->getGameState())
+		return false;
 	return true;
 }
 

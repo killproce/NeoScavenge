@@ -14,11 +14,16 @@ public:
 	virtual bool init();
 	static MainCharacter* create();
 
-	const stMapPos& getPosInMap() const { return m_posInMap; }
-	void setPosInMap(stMapPos& pos){ m_posInMap = pos; }
+	stMapPos getPosInMap(){ return m_posInMap; }
+	void setPosInMap(stMapPos& pos) { m_posInMap = pos; refreshData(); }
+
+	void refreshData();
+	void setStrength(int strength) { m_strength = strength; }
+	int getStrength() { return m_strength; }
 private:
 	stMapPos m_posInMap; // 用行列表示主角在地图上的位置
 	Sprite* m_characterImg;
+	int m_strength; // 体力
 };
 
 #endif	// __MAIN_CHARACTER_H__

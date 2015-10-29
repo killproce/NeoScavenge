@@ -2,7 +2,7 @@
 #include "Bag.h"
 #include "tinyxml2/tinyxml2.h"
 #include "Skill.h"
-#include "MapLayer.h"
+#include "GameManager.h"
 
 SelectSkillLayer::SelectSkillLayer()
 :m_skillPanel(NULL)
@@ -178,9 +178,9 @@ void SelectSkillLayer::refreshSkillPoint()
 
 	char str[100];
 	sprintf(str, "%d", getUsedSkillPoint());
-	m_usedSkillPointText->setText(str);
+	m_usedSkillPointText->setString(str);
 	sprintf(str, "%d", getLeftSkillPoint());
-	m_leftSkillPointText->setText(str);
+	m_leftSkillPointText->setString(str);
 }
 
 void SelectSkillLayer::update(float delta)
@@ -231,11 +231,10 @@ void SelectSkillLayer::loadSelectSkillConfig()
 
 void SelectSkillLayer::onConfirmCallback()
 {
-	auto scene = Director::getInstance()->getRunningScene();
-	auto mapLayer = MapLayer::create();
-	scene->addChild(mapLayer,-1);
 	m_skillPanel->setVisible(false);
 	this->setVisible(false);
+	m_skillPanel->getParent()->setLocalZOrder(-1000);
+	GameManager::getInstance()->setGameState(eGameRunning);
 }
 
 void SelectSkillLayer::onRandomSelectCallback()
